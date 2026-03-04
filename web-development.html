@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rihan 💥🖤 (Md Borhan) | Web3 & Crypto Visionary</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Particles -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <style>
+        :root {
+            --primary: #ff3366;
+            --secondary: #00f0ff;
+            --accent: #9d00ff;
+            --bg: #0a0015;
+            --card: rgba(20, 20, 40, 0.7);
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: var(--bg); 
+            color: #e0e0ff; 
+            overflow-x: hidden; 
+            position: relative; 
+        }
+        #particles-js { 
+            position: fixed; 
+            top: 0; left: 0; width: 100%; height: 100%; 
+            z-index: -1; 
+        }
+        h1, h2, h3 { 
+            font-family: 'Orbitron', sans-serif; 
+            letter-spacing: 2px; 
+        }
+        .navbar { 
+            background: rgba(10, 0, 21, 0.8) !important; 
+            backdrop-filter: blur(15px); 
+            border-bottom: 1px solid rgba(255, 51, 102, 0.2); 
+        }
+        .hero { 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+        }
+        .avatar { 
+            width: 240px; 
+            height: 240px; 
+            border-radius: 50%; 
+            border: 8px solid var(--primary); 
+            box-shadow: 0 0 80px rgba(255, 51, 102, 0.7); 
+            transition: all 0.6s; 
+        }
+        .avatar:hover { 
+            transform: scale(1.12) rotate(8deg); 
+            box-shadow: 0 0 120px var(--primary), 0 0 180px var(--secondary); 
+        }
+        .card { 
+            background: var(--card); 
+            border: 1px solid rgba(0, 240, 255, 0.2); 
+            border-radius: 25px; 
+            backdrop-filter: blur(12px); 
+            transition: all 0.5s; 
+            cursor: pointer;
+        }
+        .card:hover { 
+            transform: translateY(-20px); 
+            box-shadow: 0 40px 80px rgba(157, 0, 255, 0.4); 
+        }
+        .btn-neon { 
+            background: transparent; 
+            border: 2px solid var(--primary); 
+            color: var(--primary); 
+            font-weight: 600; 
+            transition: all 0.4s; 
+        }
+        .btn-neon:hover { 
+            background: var(--primary); 
+            color: #000; 
+            box-shadow: 0 0 40px var(--primary); 
+        }
+        .social-icon { 
+            font-size: 3rem; 
+            color: var(--secondary); 
+            margin: 0 20px; 
+            transition: all 0.4s; 
+        }
+        .social-icon:hover { 
+            color: var(--primary); 
+            transform: scale(1.3) rotate(15deg); 
+            text-shadow: 0 0 25px var(--primary); 
+        }
+        .progress { 
+            height: 12px; 
+            background: rgba(255,255,255,0.08); 
+            border-radius: 12px; 
+        }
+        .progress-bar { 
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent)); 
+        }
+        footer { 
+            background: rgba(0,0,0,0.9); 
+            border-top: 1px solid rgba(0,240,255,0.3); 
+        }
+        a.text-decoration-none:hover .card {
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">Rihan 💥🖤</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#connect">Connect</a></li>
+                    <li class="nav-item"><span class="nav-link theme-toggle fs-4" id="themeToggle">🌙</span></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" data-aos="fade-up">
+        <div class="container">
+            <img src="https://pbs.twimg.com/profile_images/1970372240765263872/_bvbjshS.jpg" alt="Rihan" class="avatar mb-5" data-aos="zoom-in" data-aos-delay="300">
+            <h1 class="display-2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="500">Rihan 💥🖤</h1>
+            <h3 class="fs-3 mb-4" data-aos="fade-up" data-aos-delay="700">(Md Borhan)</h3>
+            <p class="lead fs-3 mb-4" data-aos="fade-up" data-aos-delay="900">Winning isn't a sprint, it's a steady marathon.</p>
+            <p class="fs-4 mb-5" data-aos="fade-up" data-aos-delay="1100">Web3 Enthusiast • Crypto Explorer • Community Builder • Web Developer • Bangladesh</p>
+            <a href="https://x.com/rihan736" target="_blank" class="btn btn-neon btn-lg px-5" data-aos="fade-up" data-aos-delay="1300">Explore on X</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card p-5 text-center" data-aos="fade-right">
+                        <h2 class="mb-4">Who I Am</h2>
+                        <p class="lead fs-5 mb-4">I'm Rihan 💥🖤 (also known as Borhan), a passionate explorer in the world of Web3, blockchain from Bangladesh. I believe in long-term vision over quick wins building sustainable value in decentralized ecosystems.</p>
+                        <p class="fs-5">I actively engage with innovative projects, share insights on X (@rihan736), connect with global communities on LinkedIn, and contribute to the growth of web developer/Web3 space. Always learning, grinding, and turning challenges into opportunities. 🚀</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests / Focus Areas -->
+    <section id="interests" class="py-5 bg-black">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">My Core Interests & Strengths</h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <a href="blockchain-web3.html" target="_blank" class="text-decoration-none">
+                        <div class="card p-4 text-center">
+                            <i class="fas fa-link fa-3x mb-3" style="color: var(--secondary);"></i>
+                            <h4>Blockchain & Web3</h4>
+                            <p>Deep dives into protocols, DAOs, NFTs, DeFi, and decentralized innovation.</p>
+                            <div class="progress mt-3"><div class="progress-bar" style="width: 95%"></div></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="crypto-insights.html" target="_blank" class="text-decoration-none">
+                        <div class="card p-4 text-center">
+                            <i class="fas fa-chart-line fa-3x mb-3" style="color: var(--accent);"></i>
+                            <h4>Crypto Insights</h4>
+                            <p>Market analysis, tokenomics, alpha hunting, and long-term investment mindset.</p>
+                            <div class="progress mt-3"><div class="progress-bar" style="width: 90%"></div></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <a href="community-growth.html" target="_blank" class="text-decoration-none">
+                        <div class="card p-4 text-center">
+                            <i class="fas fa-users fa-3x mb-3" style="color: var(--primary);"></i>
+                            <h4>Community & Growth</h4>
+                            <p>Building networks, sharing knowledge, and fostering positive crypto culture.</p>
+                            <div class="progress mt-3"><div class="progress-bar" style="width: 92%"></div></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <a href="web-development.html" target="_blank" class="text-decoration-none">
+                        <div class="card p-4 text-center">
+                            <i class="fas fa-code fa-3x mb-3" style="color: #00ff9d;"></i>
+                            <h4>Web Development</h4>
+                            <p>Building responsive, modern websites with HTML, CSS, JS, Bootstrap, and Web3 integration.</p>
+                            <div class="progress mt-3"><div class="progress-bar" style="width: 96%"></div></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect -->
+    <section id="connect" class="py-5">
+        <div class="container text-center" data-aos="zoom-in">
+            <h2 class="mb-4">Connect With Me</h2>
+            <p class="lead mb-5">Open for discussions, collaborations, or just crypto chats. Reach out anytime!</p>
+            <div class="mb-5">
+                <a href="https://x.com/rihan736" target="_blank" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/md-borhan-23a2743b4" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="http://t.me/Rihan_vai" target="_blank" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+            <a href="https://x.com/rihan736" target="_blank" class="btn btn-neon btn-lg px-5">DM on X</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <p>© 2026 Rihan 💥🖤 (Borhan) • From BD</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1300, once: true });
+
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 100, density: { enable: true, value_area: 800 } },
+                color: { value: ["#ff3366", "#00f0ff", "#9d00ff"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.6, random: true },
+                size: { value: 4, random: true },
+                line_linked: { enable: true, distance: 180, color: "#ffffff", opacity: 0.25, width: 1.5 },
+                move: { enable: true, speed: 2.5, direction: "none", random: false, straight: false, out_mode: "out" }
+            },
+            interactivity: { detect_on: "canvas", events: { onhover: { enable: true, mode: "repulse" } } },
+            retina_detect: true
+        });
+
+        const toggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        toggle.addEventListener('click', () => {
+            if (html.getAttribute('data-bs-theme') === 'dark') {
+                html.setAttribute('data-bs-theme', 'light');
+                toggle.textContent = '☀️';
+            } else {
+                html.setAttribute('data-bs-theme', 'dark');
+                toggle.textContent = '🌙';
+            }
+        });
+    </script>
+</body>
+</html>
