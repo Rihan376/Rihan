@@ -20,21 +20,22 @@
             --secondary: #00f0ff;
             --accent: #9d00ff;
             --bg: #0a0015;
-            --card: rgba(30, 30, 50, 0.9); /* opacity বাড়ানো যাতে টেক্সট ক্লিয়ার */
+            --card: rgba(20, 20, 40, 0.85);
         }
         body { 
             font-family: 'Inter', sans-serif; 
             background: var(--bg); 
-            color: #ffffff; /* টেক্সট কালার উজ্জ্বল করা */
+            color: #ffffff; 
             overflow-x: hidden; 
             position: relative; 
             min-height: 100vh;
+            padding-top: 90px;
         }
         #particles-js { 
             position: fixed; 
             top: 0; left: 0; width: 100%; height: 100%; 
             z-index: -1; 
-            opacity: 0.3; /* particles আরও কম ঘন যাতে টেক্সট দেখা যায় */
+            opacity: 0.35;
         }
         h1, h2, h3 { 
             font-family: 'Orbitron', sans-serif; 
@@ -45,15 +46,29 @@
             background: rgba(10, 0, 21, 0.95) !important; 
             backdrop-filter: blur(15px); 
             border-bottom: 1px solid rgba(255, 51, 102, 0.3); 
+            height: 90px;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand span {
+            margin-left: 8px;
+            font-size: 1.4rem;
+        }
+        .nav-link {
+            font-weight: 500;
+            margin-left: 1.5rem;
         }
         .container { 
-            padding-top: 140px; /* navbar-এর জন্য স্পেস */
+            padding-top: 30px; 
             padding-bottom: 5rem; 
             max-width: 1100px; 
         }
         .card { 
             background: var(--card); 
-            border: 1px solid rgba(0, 240, 255, 0.4); 
+            border: 1px solid rgba(0, 240, 255, 0.3); 
             border-radius: 20px; 
             backdrop-filter: blur(10px); 
             transition: all 0.5s; 
@@ -65,7 +80,7 @@
         .btn-neon { 
             background: transparent; 
             border: 2px solid var(--primary); 
-            color: var(--primary); 
+            color: var(--secondary); 
             font-weight: 600; 
             transition: all 0.4s; 
         }
@@ -84,15 +99,19 @@
         h1 {
             font-size: 3rem;
             margin-bottom: 2rem;
+            text-align: center;
         }
         .lead {
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             line-height: 1.8;
         }
         .list-group-item {
             background: rgba(40, 40, 60, 0.7);
             border: none;
             color: #ffffff;
+            margin-bottom: 0.8rem;
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
         }
     </style>
 </head>
@@ -100,19 +119,20 @@
 
     <div id="particles-js"></div>
 
-   <!-- Navbar -->
+    <!-- Navbar (প্রথম ছবির মতো) -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="#">Rihan 💥🖤</a>
+            <a class="navbar-brand fw-bold fs-4" href="https://rihan-eosin.vercel.app/">
+                Rihan <span>✨ ♥</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#connect">Connect</a></li>
-                    <li class="nav-item"><span class="nav-link theme-toggle fs-4" id="themeToggle">🌙</span></li>
+                    <li class="nav-item"><a class="nav-link" href="https://rihan-eosin.vercel.app/#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://rihan-eosin.vercel.app/#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://rihan-eosin.vercel.app/#connect">Connect</a></li>
                 </ul>
             </div>
         </div>
@@ -124,21 +144,21 @@
         <div class="card p-5 mb-5" data-aos="fade-up" data-aos-delay="200">
             <h2 class="mb-4" style="color: var(--secondary);">Building Communities & Fostering Growth</h2>
             <p class="lead mb-4">
-                I believe strong communities are the backbone of Web3 and crypto success. I specialize in growing engaged, loyal, and active communities that drive real value.
+                Strong communities are the heart of Web3 and crypto success. I specialize in creating, growing, and nurturing engaged communities that drive adoption and value.
             </p>
             <p class="mb-4">
-                My approach focuses on:
+                My expertise includes:
             </p>
-            <ul class="list-group list-group-flush mb-4">
-                <li class="list-group-item">Creating and managing Discord, Telegram, and Twitter communities</li>
-                <li class="list-group-item">Running engagement campaigns, AMAs, giveaways, and events</li>
-                <li class="list-group-item">Developing community guidelines and moderation strategies</li>
-                <li class="list-group-item">Building positive, inclusive crypto culture</li>
-                <li class="list-group-item">Growing follower base through organic strategies and content</li>
-                <li class="list-group-item">Analyzing community metrics and providing growth insights</li>
+            <ul class="list-group list-group-flush mb-5">
+                <li class="list-group-item">Creating and managing Discord, Telegram, Twitter/X communities</li>
+                <li class="list-group-item">Running high-engagement campaigns, AMAs, giveaways, and events</li>
+                <li class="list-group-item">Creating community guidelines, moderation teams, and anti-spam strategies</li>
+                <li class="list-group-item">Fostering inclusive, positive, and innovative crypto culture</li>
+                <li class="list-group-item">Growing follower base organically through content and collaborations</li>
+                <li class="list-group-item">Tracking metrics, analyzing sentiment, and providing growth strategies</li>
             </ul>
-            <p class="lead">
-                Whether you're launching a token, NFT project, DAO, or DeFi protocol.I help build the community that supports long-term success. Let's grow together.
+            <p class="lead text-center">
+                From token launches and NFT drops to DAOs and DeFi protocols — I build the community that fuels long-term success. Let's create a thriving ecosystem together! 🚀
             </p>
         </div>
 
@@ -160,13 +180,13 @@
     <script>
         AOS.init({ duration: 1200, once: true });
 
-        // Particles - same as main page but less dense
+        // Particles - same as main page
         particlesJS("particles-js", {
             particles: {
-                number: { value: 60, density: { enable: true, value_area: 800 } }, /* কমানো */
+                number: { value: 80, density: { enable: true, value_area: 800 } },
                 color: { value: ["#ff3366", "#00f0ff", "#9d00ff"] },
                 shape: { type: "circle" },
-                opacity: { value: 0.4, random: true },
+                opacity: { value: 0.5, random: true },
                 size: { value: 3, random: true },
                 line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.2, width: 1 },
                 move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out" }
