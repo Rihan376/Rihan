@@ -25,16 +25,17 @@
         body { 
             font-family: 'Inter', sans-serif; 
             background: var(--bg); 
-            color: #f0f0ff; 
+            color: #ffffff; 
             overflow-x: hidden; 
             position: relative; 
             min-height: 100vh;
+            padding-top: 90px; /* Navbar-এর জন্য সঠিক স্পেস */
         }
         #particles-js { 
             position: fixed; 
             top: 0; left: 0; width: 100%; height: 100%; 
             z-index: -1; 
-            opacity: 0.45;
+            opacity: 0.35;
         }
         h1, h2, h3 { 
             font-family: 'Orbitron', sans-serif; 
@@ -45,9 +46,23 @@
             background: rgba(10, 0, 21, 0.95) !important; 
             backdrop-filter: blur(15px); 
             border-bottom: 1px solid rgba(255, 51, 102, 0.3); 
+            height: 90px;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand span {
+            margin-left: 8px;
+            font-size: 1.4rem;
+        }
+        .nav-link {
+            font-weight: 500;
+            margin-left: 1.5rem;
         }
         .container { 
-            padding-top: 140px; 
+            padding-top: 30px; 
             padding-bottom: 5rem; 
             max-width: 1100px; 
         }
@@ -65,7 +80,7 @@
         .btn-neon { 
             background: transparent; 
             border: 2px solid var(--primary); 
-            color: var(--primary); 
+            color: var(--secondary); 
             font-weight: 600; 
             transition: all 0.4s; 
         }
@@ -84,15 +99,19 @@
         h1 {
             font-size: 3rem;
             margin-bottom: 2rem;
+            text-align: center;
         }
         .lead {
-            font-size: 1.3rem;
+            font-size: 1.35rem;
             line-height: 1.8;
         }
         .list-group-item {
             background: rgba(40, 40, 60, 0.7);
             border: none;
             color: #ffffff;
+            margin-bottom: 0.8rem;
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
         }
     </style>
 </head>
@@ -100,10 +119,12 @@
 
     <div id="particles-js"></div>
 
-    <!-- Navbar -->
+    <!-- Navbar (প্রথম ছবির মতো) -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="https://rihan-eosin.vercel.app/">Rihan 💥🖤</a>
+            <a class="navbar-brand fw-bold fs-4" href="https://rihan-eosin.vercel.app/">
+                Rihan <span>✨ ♥</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -123,7 +144,7 @@
         <div class="card p-5 mb-5" data-aos="fade-up" data-aos-delay="200">
             <h2 class="mb-4" style="color: var(--secondary);">My Expertise in Blockchain & Web3</h2>
             <p class="lead mb-4">
-                I work deeply in blockchain and Web3 technology. From protocol analysis to DAO formation, NFT collections, DeFi projects, smart contract integration. I have long-term experience in all these areas.
+                I work deeply in blockchain and Web3 technology. From protocol analysis to DAO formation, NFT collections, DeFi projects, smart contract integration — I have long-term experience in all these areas.
             </p>
             <p class="mb-4">
                 The core power of Web3 is decentralization. I create for clients:
@@ -136,7 +157,7 @@
                 <li class="list-group-item">Blockchain-based project frontend + documentation</li>
             </ul>
             <p class="lead">
-                Everything is responsive, secure, and user-friendly. If you have any Web3 idea or project contact me. I will help turn your dream into reality. 
+                Everything is responsive, secure, and user-friendly. If you have any Web3 idea or project — contact me. I will help turn your dream into reality. 🚀
             </p>
         </div>
 
