@@ -25,28 +25,44 @@
         body { 
             font-family: 'Inter', sans-serif; 
             background: var(--bg); 
-            color: #f0f0ff; 
+            color: #ffffff; 
             overflow-x: hidden; 
             position: relative; 
             min-height: 100vh;
+            padding-top: 90px; /* Navbar-এর জন্য সঠিক স্পেস */
         }
         #particles-js { 
             position: fixed; 
             top: 0; left: 0; width: 100%; height: 100%; 
             z-index: -1; 
-            opacity: 0.45;
+            opacity: 0.35;
         }
         h1, h2, h3 { 
             font-family: 'Orbitron', sans-serif; 
             letter-spacing: 2px; 
+            text-shadow: 0 0 15px var(--secondary);
         }
         .navbar { 
-            background: rgba(10, 0, 21, 0.9) !important; 
+            background: rgba(10, 0, 21, 0.95) !important; 
             backdrop-filter: blur(15px); 
             border-bottom: 1px solid rgba(255, 51, 102, 0.3); 
+            height: 90px;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand span {
+            margin-left: 8px;
+            font-size: 1.4rem;
+        }
+        .nav-link {
+            font-weight: 500;
+            margin-left: 1.5rem;
         }
         .container { 
-            padding-top: 140px; 
+            padding-top: 30px; 
             padding-bottom: 5rem; 
             max-width: 1100px; 
         }
@@ -59,12 +75,12 @@
         }
         .card:hover { 
             transform: translateY(-10px); 
-            box-shadow: 0 20px 50px rgba(157, 0, 255, 0.3); 
+            box-shadow: 0 20px 50px rgba(157, 0, 255, 0.4); 
         }
         .btn-neon { 
             background: transparent; 
             border: 2px solid var(--primary); 
-            color: var(--primary); 
+            color: var(--secondary); 
             font-weight: 600; 
             transition: all 0.4s; 
         }
@@ -74,7 +90,7 @@
             box-shadow: 0 0 30px var(--primary); 
         }
         footer { 
-            background: rgba(0,0,0,0.9); 
+            background: rgba(0,0,0,0.95); 
             border-top: 1px solid rgba(0,240,255,0.3); 
             padding: 2rem 0; 
             text-align: center; 
@@ -83,16 +99,19 @@
         h1 {
             font-size: 3rem;
             margin-bottom: 2rem;
-            text-shadow: 0 0 20px var(--secondary);
+            text-align: center;
         }
         .lead {
-            font-size: 1.3rem;
+            font-size: 1.35rem;
             line-height: 1.8;
         }
         .list-group-item {
             background: rgba(40, 40, 60, 0.7);
             border: none;
             color: #ffffff;
+            margin-bottom: 0.8rem;
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
         }
     </style>
 </head>
@@ -100,10 +119,12 @@
 
     <div id="particles-js"></div>
 
-    <!-- Navbar -->
+    <!-- Navbar (প্রথম ছবির মতো) -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="https://rihan-eosin.vercel.app/">Rihan 💥🖤</a>
+            <a class="navbar-brand fw-bold fs-4" href="https://rihan-eosin.vercel.app/">
+                Rihan <span>✨ ♥</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -123,22 +144,22 @@
         <div class="card p-5 mb-5" data-aos="fade-up" data-aos-delay="200">
             <h2 class="mb-4" style="color: var(--secondary);">My Expertise in Web Development</h2>
             <p class="lead mb-4">
-                I build modern, responsive, and high-performance websites that look great and work flawlessly across all devices.
+                I build modern, responsive, high-performance websites that look stunning and work flawlessly across all devices.
             </p>
             <p class="mb-4">
                 My core skills include:
             </p>
-            <ul class="list-group list-group-flush mb-4">
-                <li class="list-group-item">HTML5, CSS3, JavaScript (ES6+)</li>
-                <li class="list-group-item">Bootstrap 5, Tailwind CSS, responsive design</li>
-                <li class="list-group-item">Modern UI/UX with animations (AOS, GSAP)</li>
-                <li class="list-group-item">Figma/Adobe XD to HTML/CSS/JS conversion</li>
-                <li class="list-group-item">Web3 integration (wallet connect, smart contract UI)</li>
-                <li class="list-group-item">Fast loading, SEO-friendly, mobile-first development</li>
-                <li class="list-group-item">Landing pages, portfolios, dashboards, and custom sites</li>
+            <ul class="list-group list-group-flush mb-5">
+                <li class="list-group-item">HTML5, CSS3, JavaScript (ES6+), React/Vue basics</li>
+                <li class="list-group-item">Bootstrap 5, Tailwind CSS, responsive & mobile-first design</li>
+                <li class="list-group-item">Modern UI/UX with animations (AOS, GSAP, Framer Motion)</li>
+                <li class="list-group-item">Figma, Adobe XD to pixel-perfect HTML/CSS/JS conversion</li>
+                <li class="list-group-item">Web3 integration (wallet connect, MetaMask, smart contract UI)</li>
+                <li class="list-group-item">Fast loading, SEO optimized, accessible websites</li>
+                <li class="list-group-item">Landing pages, portfolios, dashboards, e-commerce fronts, crypto sites</li>
             </ul>
-            <p class="lead">
-                I deliver clean, well-structured code with unlimited revisions until you're completely satisfied. Whether it's a personal portfolio, crypto project site, or business website. let's create something outstanding together.
+            <p class="lead text-center">
+                I deliver clean, well-documented code with unlimited revisions until you're 100% satisfied. Whether it's a personal portfolio, crypto project, business site, or Web3 dApp frontend — let's create something outstanding together! 🚀
             </p>
         </div>
 
